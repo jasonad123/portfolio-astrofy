@@ -8,3 +8,11 @@ body {
 body {
   padding: 20px;
 }
+
+.frame-content {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.9rem;
+}
+.frame-content img {
+  max-width: 100%;
+}
