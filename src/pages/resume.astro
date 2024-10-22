@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
+<BaseLayout title="Resume" sideBarActiveItemID="resume">
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
@@ -22,7 +22,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
       title="Bachelor of Arts, Major in Human Geography, Minor in Urban Studies"
-      subtitle="2016 to 2021 at University of British Columbia, Vancouver, British Columbia, Canada"
+      subtitle="2016 to 2021 at University of British Columbia, Vancouver, BC, Canada"
     />
   </div>
 
@@ -30,25 +30,38 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <div class="text-3xl w-full font-bold">Experience</div>
   </div>
 
-  <div class="time-line-container mb-10">
+  <div class="time-line-container mb-14 mt-2">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="macOS Admin/Deputy InfoSec Officer "
+      subtitle="From February 2023 to present at Jarrett Walker + Associates, Arlington, VA, USA"
+    >
+      From early 2023 I took lead on formalizing the IT program at my company (as one of many other hats). Since then we've:
+      <ul class ="list-disc mx-6 mb-6">
+        <li>Successfully deployed Mobile Device Management across our entire macOS fleet</li>
+        <li>Implemented next-gen antivirus with light EDR capabilities and a fleet-wide SWG</li>
+        <li>Built the foundation for Zero Trust Network Access (ZTNA) for internal and SaaS apps</li>
+        <li>Successfully automated the onboarding of new Macs</li>
+      </ul>
+
+    </TimeLineElement>
+    <TimeLineElement
+      title="Transit Analyst"
+      subtitle="From January 2022 to present at Jarrett Walker + Associates, Arlington, VA, USA"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
+    title="Technical Writer (Proposals)"
+    subtitle="From July 2021 to January 2022 at Spare, Vancouver, BC, Canada"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+  </TimeLineElement>
+  <TimeLineElement
+  title="Student Transportation Planner (Policy Development)"
+  subtitle="From May 2019 to December 2019 at TransLink, Vancouver, BC, Canada"
+>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+</TimeLineElement>
   </div>
 
   <div class="mb-5">
@@ -68,21 +81,26 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <ul class="list-disc md:columns-2 columns-2 mx-6 my-6">
+    <li>Illustrator</li>
+    <li>InDesign</li>
+    <li>QGIS</li>
+    <li>General GIS analysis</li>
+    <li>R</li>
+    <li>Google Workspace</li>
+    <li>Basic macOS deployment</li>
+    <li>Intermediate networking</li>
+
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills in progress</div>
+  </div>
+
+  <ul class="list-disc md:columns-2 columns-2 mx-6">
+    <li>Frontend web development</li>
+    <li>Astro</li>
+    <li>Eleventy</li>
+    <li>TypeScript</li>
   </ul>
 </BaseLayout>
