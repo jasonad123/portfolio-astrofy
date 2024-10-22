@@ -66,6 +66,7 @@ const socialsCollection = defineCollection({
             "telegram",
             "email",
             "home",
+            "contactpage"
           ]),
         )
         .length(1),
