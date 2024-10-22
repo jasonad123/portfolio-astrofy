@@ -34,3 +34,40 @@ export const collections = {
     'blog': blogCollection,
     'store': storeCollection
 }
+
+const socialsCollection = defineCollection({
+    schema: z.object({
+      title: z.string(),
+      url: z.string(),
+      order: z.number(),
+      icon: z
+        .array(
+          z.enum([
+            "github",
+            "twitter",
+            "linkedin",
+            "instagram",
+            "facebook",
+            "youtube",
+            "twitch",
+            "tiktok",
+            "snapchat",
+            "reddit",
+            "pinterest",
+            "medium",
+            "dev",
+            "dribbble",
+            "behance",
+            "codepen",
+            "producthunt",
+            "discord",
+            "slack",
+            "whatsapp",
+            "telegram",
+            "email",
+            "home",
+          ]),
+        )
+        .length(1),
+    }),
+  });

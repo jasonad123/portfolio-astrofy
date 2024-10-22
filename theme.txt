@@ -1,0 +1,20 @@
+// mytheme: {
+          
+// 	"primary": "#6ebb46",
+			  
+// 	"secondary": "#00a3da",
+			  
+// 	"accent": "#8c41cf",
+			  
+// 	"neutral": "#6ebb46",
+			  
+// 	"base-100": "#252525",
+			  
+// 	"info": "#00a3da",
+			  
+// 	"success": "#6ebb46",
+			  
+// 	"warning": "#003d54",
+			  
+// 	"error": "#ae1c13",
+// 			  },
