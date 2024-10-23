@@ -8,6 +8,9 @@ Astrofy is a free and open-source template for your Personal Portfolio Website b
 
 View a live demo of [Astrofy](https://astrofy-template.netlify.app/)
 
+## Build
+![build status](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.jasonadle2.workers.dev/?projectName=portfolio-astrofy)
+
 ## Installation
 
 Run the following command in your terminal
