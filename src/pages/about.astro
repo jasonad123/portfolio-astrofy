@@ -2,6 +2,22 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
+<style>
+  p { 
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  li { 
+    margin-top: 1.25rem;
+    margin-left: .5rem;
+  }
+  h1 {
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    width: 100%;
+    font-weight: 700;
+  }
+</style>
 
 <BaseLayout title="About" sideBarActiveItemID="about">
   <div class="mb-5">
@@ -19,14 +35,38 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-5">
-    <h1 class="text-2xl w-full font-bold">Where do you live?</h1>
-    <p class = "mt-5">📍<a href="https://www.openstreetmap.org/relation/5396194" class="text-logo-green hover:text-logo-blue">Washington, DC</a></p>
+    <h1>Where do you live?</h1>
+    <p>📍<a href="https://www.openstreetmap.org/relation/5396194" class="text-logo-green hover:text-logo-blue">Washington, DC</a></p>
   </div>
 
   <div class="mb-5">
-    <h1 class="text-2xl w-full font-bold">What's your experience?</h1>
-    <p class = "mt-5">Excellent question. A very brief variant of my resume is available on the <a href="/resume" class="text-logo-green hover:text-logo-blue">Resume</a> section of this site. Some projects I've worked on throughout my career (and some personal projects) are linked in the <a href="/blog" class="text-logo-green hover:text-logo-blue" >Projects</a> section.</p>
+    <h1>What's your experience?</h1>
+    <p>Excellent question. A very brief variant of my resume is available on the <a href="/resume" class="text-logo-green hover:text-logo-blue">Resume</a> section of this site. Some projects I've worked on throughout my career (and some personal projects) are linked in the <a href="/blog" class="text-logo-green hover:text-logo-blue" >Projects</a> section.</p>
   </div>
 
+  <div class="mb-5">
+    <h1>How do I contact you?</h1>
+    <p>Take your pick of contact method on my landing page.</p>
+  </div>
+
+  <div class="mb-5">
+    <h1>What's your academic background?</h1>
+    <p>I hold a Bachelor of Arts with a Major in Human Geography and a Minor in Urban Studies from the University of British Columbia in Vancouver.</p>
+  </div>
+
+  <div class="mb-5">
+    <h1>What languages do you know?</h1>
+    <p><strong>Code:</strong> HTML, CSS, JS, shell, some AppleScript</p>
+    <p><strong>Spoken/written:</strong> English, Spanish, some French, some German, some Filipino</p>
+    <p><strong>Slang:</strong> Younger Millennial/older Gen Z slang, with some knowledge of younger Gen Z/Gen Alpha slang (aka the <a href="https://www.dispatch.com/story/news/local/2024/08/17/skibidi-toilet-ohio-rizz-gen-alpha-slang-terms-meaning/74702923007/">skibidi toilet ohio rizzler</a> <em><strong>shudders</strong></em>)</p>
+  </div>
+
+  <div class="mb-5">
+    <h1>What is your favourite...</h1>
+    <ul style="list-style-type:disc">
+      <li><strong>Code editor:</strong> currently <a href="https://code.visualstudio.com">VS Code</a></li>
+      <li><strong>Hosting:</strong> <a href="https://pages.cloudflare.com">Cloudflare</a> (this website is built on it!)</li>
+      <li><strong>Train or metro system:</strong> Tie between Vienna and Vancouver</li></ul>
+  </div>
 
 </BaseLayout>
