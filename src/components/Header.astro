@@ -1,3 +1,8 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import logo from '../assets/nameglyph_darkmode_small.svg';
+---
 <div
   class="sticky lg:hidden top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-base-100 text-base-content shadow-sm"
 >
@@ -9,8 +14,8 @@
         </svg>
       </label>
     </div>
-    <div class="navbar-center flex-auto ml-5 btn btn-ghost">
-      <a href ="/"><img src="nameglyph_darkmode_short.svg" width="125" height="100"></a>
+    <div class="navbar-center flex-auto justify-center mb-1 btn btn-ghost btn-wide">
+      <a href ="/"><Image src={logo} alt="My personal logo" height="90"/></a>
     </div>
     </div>
     <div class="navbar-end"></div>
