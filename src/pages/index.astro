@@ -5,8 +5,10 @@ import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const projects = (await getCollection("projects")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const last_posts = posts.slice(0, 3);
+const last_posts = posts.slice(0, 1);
+const last_projects = projects.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -50,9 +52,27 @@ const last_posts = posts.slice(0, 3);
     url="#"
     badge="FOSS"
   /> -->
-
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest projects and posts</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest projects</div>
+  </div>
+
+  {
+    last_projects.map((projects) => (
+      <>
+        <HorizontalCard
+          title={projects.data.title}
+          img={projects.data.heroImage}
+          desc={projects.data.description}
+          url={"/projects/" + createSlug(projects.data.title, projects.slug)}
+          target="_self"
+          badge={projects.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest post</div>
   </div>
 
   {
@@ -70,4 +90,5 @@ const last_posts = posts.slice(0, 3);
       </>
     ))
   }
+
 </BaseLayout>

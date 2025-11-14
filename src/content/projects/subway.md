@@ -1,7 +1,7 @@
 ---
 title: The Subway Subway
 description: What if you made a subway/metro system out of Subway restaurants? This fun project from my undergrad days shows what that process was like.
-pubDate: 2024-10-01
+pubDate: 2023-10-01
 heroImage: https://asset.staticeagles.com/img/project/subway4.png
 tags:
   - maps
