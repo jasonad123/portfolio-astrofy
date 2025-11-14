@@ -1,8 +1,7 @@
 ---
 title: The Subway Subway
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-pubDate: 2024-10-01T01:46:00.000Z
+description: What if you made a subway/metro system out of Subway restaurants? This fun project from my undergrad days shows what that process was like.
+pubDate: 2024-10-01
 heroImage: https://asset.staticeagles.com/img/project/subway4.png
 tags:
   - maps
@@ -25,6 +24,7 @@ While this observation started as a creative thought experiment on social media,
 ## Data Collection Process
 
 ### The Game Plan
+
 * Build a solid base map of Vancouver (shorelines included)
 * Plot existing transit lines
 * Track down every Subway restaurant in the city
@@ -32,6 +32,7 @@ While this observation started as a creative thought experiment on social media,
 * Create a professional transit-style map
 
 ### The Data Hunt
+
 The foundational elements—base map and transit data—were a breeze thanks to Vancouver's Open Data Portal. Perfect for dropping into ArcGIS or QGIS. But finding every Subway location? That turned into quite the adventure:
 
 1. Reached out to Subway Canada (radio silence 👋)
